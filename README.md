@@ -13,8 +13,8 @@ https://docs.google.com/document/d/1qxbroKUa4YKsEECEGHdosMxDj5vEKOlx__hoYpXjuaY/
 
 
 - Team Members:
-Cheng Zhao (Section 1)
+Cheng Zhao (Section 2)
 Yafei Han (Section 1)
-Xinyi Dai (Section 2)
+Xinyi Dai (Section 1)
 Yanwen Duan (Section 2)
 
