@@ -95,9 +95,9 @@ export default function ProfileHeader({ profile, isCurrentUser }) {
             <>
               <Divider />
               <Reveal animated='move'>
-                <Reveal.Content visible style={{ width: '100%' }}>
-                  <Button fluid color='teal' content={followingUser ? 'Following' : 'Not following'} />
-                </Reveal.Content>
+                {/*<Reveal.Content visible style={{ width: '100%' }}>*/}
+                {/*  <Button fluid color='teal' content={followingUser ? 'Following' : 'Not following'} />*/}
+                {/*</Reveal.Content>*/}
                 <Reveal.Content hidden style={{ width: '100%' }}>
                   <Button
                     onClick={followingUser ? () => handleUnfollowUser() : () => handleFollowUser()}
