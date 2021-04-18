@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import testReducer from '../../features/sandbox/testReducer';
+import testReducer from '../../features/map/testReducer';
 import eventReducer from '../../features/events/eventReducer';
 import modalReducer from '../common/modals/modalReducer';
 import authReducer from '../../features/auth/authReducer';

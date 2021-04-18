@@ -6,7 +6,7 @@ import { Route, useLocation } from 'react-router-dom';
 import HomePage from '../../features/home/HomePage';
 import EventDetailedPage from '../../features/events/eventDetailed/EventDetailedPage';
 import EventForm from '../../features/events/eventForm/EventForm';
-import Sandbox from '../../features/sandbox/Sandbox';
+import Map from '../../features/map/Map';
 import ModalManager from '../common/modals/ModalManager';
 import { ToastContainer } from 'react-toastify';
 import ErrorComponent from '../common/errors/ErrorComponent';
@@ -34,7 +34,7 @@ export default function App() {
             <NavBar />
             <Container className='main'>
               <Route exact path='/events' component={EventDashboard} />
-              <Route exact path='/sandbox' component={Sandbox} />
+              <Route exact path='/map' component={Map} />
               <Route path='/events/:id' component={EventDetailedPage} />
               <PrivateRoute
                 path={['/createEvent', '/manage/:id']}
