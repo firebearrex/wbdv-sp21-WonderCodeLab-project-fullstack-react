@@ -3,11 +3,11 @@ import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-export default function TestMap({location}) {
+export default function Map({location}) {
   return (
     <div style={{ height: '100vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: '%REACT_APP_GOOGLE_PLACE_API_KEY%' }}
+          bootstrapURLKeys={{ key: '%REACT_APP_GOOGLE_PLACE_API_KEY%' }}
         center={location.center}
         zoom={location.zoom}
       >

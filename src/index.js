@@ -1,18 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css';
+import 'react-toastify/dist/ReactToastify.min.css';
+import 'react-calendar/dist/Calendar.css';
+import './app/layout/styles.css';
+import App from './app/layout/App';
+import { Provider } from 'react-redux';
+import { configureStore, history } from './app/store/configureStore';
+import ScrollToTop from './app/layout/ScrollToTop';
+import {ConnectedRouter} from 'connected-react-router';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const store = configureStore();
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const rootEl = document.getElementById('root');
+
+function render() {
+  ReactDOM.render(
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <ScrollToTop />
+        <App />
+      </ConnectedRouter>
+    </Provider>,
+    rootEl
+  );
+}
+
+render();
+
