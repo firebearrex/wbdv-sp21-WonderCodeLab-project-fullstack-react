@@ -5,7 +5,7 @@ import SignedOutMenu from './SignedOutMenu';
 import SignedInMenu from './SignedInMenu';
 import { useSelector } from 'react-redux';
 
-export default function NavBar({ setFormOpen }) {
+export default function NavBar() {
   const {authenticated} = useSelector(state => state.auth);
 
   return (
@@ -13,10 +13,9 @@ export default function NavBar({ setFormOpen }) {
       <Container>
         <Menu.Item as={NavLink} exact to='/' header>
           <img src='/assets/logo.png' alt='logo' style={{ marginRight: 15 }} />
-          Re-vents
         </Menu.Item>
         <Menu.Item as={NavLink} to='/events' name='Events' />
-        <Menu.Item as={NavLink} to='/sandbox' name='Sandbox' />
+        <Menu.Item as={NavLink} to='/map' name='Map' />
         {authenticated && (
           <Menu.Item as={NavLink} to='/createEvent'>
             <Button positive inverted content='Create Event' />
