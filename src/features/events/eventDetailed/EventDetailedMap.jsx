@@ -2,6 +2,8 @@ import React from 'react';
 import { Segment, Icon } from 'semantic-ui-react';
 import GoogleMapReact from 'google-map-react';
 
+require('dotenv').config()
+
 function Marker() {
     return (<Icon name='marker' size='big' color='red' />)
 }
