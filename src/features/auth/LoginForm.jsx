@@ -45,8 +45,8 @@ export default function LoginForm() {
                             color='teal'
                             content='Login'
                         />
-                        <Divider horizontal>Or</Divider>
-                        <SocialLogin />
+                        {/*<Divider horizontal>Or</Divider>*/}
+                        {/*<SocialLogin />*/}
                     </Form>
                 )}
             </Formik>
