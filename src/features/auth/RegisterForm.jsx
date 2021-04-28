@@ -47,8 +47,8 @@ export default function RegisterForm() {
                             color='teal'
                             content='Register'
                         />
-                        <Divider horizontal>Or</Divider>
-                        <SocialLogin />
+                        {/*<Divider horizontal>Or</Divider>*/}
+                        {/*<SocialLogin />*/}
                     </Form>
                 )}
             </Formik>
