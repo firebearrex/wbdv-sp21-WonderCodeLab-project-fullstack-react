@@ -17,37 +17,30 @@ import ProfilePage from '../../features/profiles/profilePage/ProfilePage';
 import PrivateRoute from './PrivateRoute';
 
 export default function App() {
-  const { key } = useLocation();
-  const { initialized } = useSelector((state) => state.async);
+    const { key } = useLocation();
+    const { initialized } = useSelector((state) => state.async);
 
-  if (!initialized) return <LoadingComponent content='Loading app...' />
+    if (!initialized) return <LoadingComponent content='Loading app...' />
 
-  return (
-    <>
-      <ModalManager />
-      <ToastContainer position='bottom-right' hideProgressBar />
-      <Route exact path='/' component={HomePage} />
-      <Route
-        path={'/(.+)'}
-        render={() => (
-          <>
-            <NavBar />
-            <Container className='main'>
-              <Route exact path='/events' component={EventDashboard} />
-              <Route exact path='/map' component={Map} />
-              <Route path='/events/:id' component={EventDetailedPage} />
-              <PrivateRoute
-                path={['/createEvent', '/manage/:id']}
-                component={EventForm}
-                key={key}
-              />
-              <PrivateRoute path='/account' component={AccountPage} />
-              <PrivateRoute path='/profile/:id' component={ProfilePage} />
-              <Route path='/error' component={ErrorComponent} />
-            </Container>
-          </>
-        )}
-      />
-    </>
-  );
+    return (
+        <>
+            <ModalManager />
+            <ToastContainer position='bottom-right' hideProgressBar />
+            <Route exact path='/' component={HomePage} />
+                <NavBar />
+                <Container className='main'>
+                    <Route exact path='/events' component={EventDashboard} />
+                    <Route exact path='/search' component={Map} />
+                    <Route path='/events/:id' component={EventDetailedPage} />
+                    <PrivateRoute
+                        path={['/createEvent', '/manage/:id']}
+                        component={EventForm}
+                        key={key}
+                    />
+                    <PrivateRoute path='/account' component={AccountPage} />
+                    <PrivateRoute path='/profile/:id' component={ProfilePage} />
+                    <Route path='/error' component={ErrorComponent} />
+                </Container>
+        </>
+    );
 }
