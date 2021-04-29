@@ -15,7 +15,7 @@ export default function NavBar() {
           <img src='/assets/logo.jpeg' alt='logo' style={{ marginRight: 15 }} />
         </Menu.Item>
         <Menu.Item as={NavLink} to='/events' name='Events' />
-        <Menu.Item as={NavLink} to='/map' name='Map' />
+        <Menu.Item as={NavLink} to='/search' name='Map' />
         {authenticated && (
           <Menu.Item as={NavLink} to='/createEvent'>
             <Button positive inverted content='Create Event' />
