@@ -7,7 +7,7 @@ import { Button, Label, Divider } from 'semantic-ui-react';
 import { useDispatch } from 'react-redux';
 import { closeModal } from '../../app/common/modals/modalReducer';
 import { registerInFirebase } from '../../app/firestore/firebaseService';
-import SocialLogin from './SocialLogin';
+// import SocialLogin from './SocialLogin';
 
 export default function RegisterForm() {
     const dispatch = useDispatch();
