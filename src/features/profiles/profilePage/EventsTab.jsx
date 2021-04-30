@@ -20,8 +20,8 @@ export default function EventsTab({ profile }) {
   });
 
   const panes = [
-    { menuItem: 'Future Events', pane: { key: 'future' } },
-    { menuItem: 'Past Events', pane: { key: 'past' } },
+    { menuItem: 'Events to Participate', pane: { key: 'future' } },
+    // { menuItem: 'Past Events', pane: { key: 'past' } },
     { menuItem: 'Hosting', pane: { key: 'hosting' } },
   ];
   return (
