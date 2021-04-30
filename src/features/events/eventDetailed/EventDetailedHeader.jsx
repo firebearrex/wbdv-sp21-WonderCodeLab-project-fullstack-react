@@ -18,7 +18,7 @@ const eventImageStyle = {
 const eventImageTextStyle = {
   position: 'absolute',
   bottom: '5%',
-  left: '5%',
+  left: 'auto',
   width: '100%',
   height: 'auto',
   color: 'white',
