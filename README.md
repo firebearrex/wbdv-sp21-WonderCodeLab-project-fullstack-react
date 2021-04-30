@@ -1,14 +1,14 @@
 ## wbdv-sp21-WonderCodeLab-project-fullstack-react
-### Project Name: 
+### `Project Name`: 
 Bay Area Events
 
-###Project description: 
+### `Project description`: 
 https://docs.google.com/document/d/1qxbroKUa4YKsEECEGHdosMxDj5vEKOlx__hoYpXjuaY/edit?usp=sharing
 
-###Team Name: 
+### `Team Name`: 
 WonderCodeLab
 
-###Team Members: 
+### `Team Members`: 
 Cheng Zhao (Section 2) 
 Yafei Han (Section 1) 
 Xinyi Dai (Section 1) 
