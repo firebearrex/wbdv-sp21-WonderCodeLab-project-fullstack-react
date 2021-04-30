@@ -1,4 +1,10 @@
 ## wbdv-sp21-WonderCodeLab-project-fullstack-react
+The goal of our project is to provide a platform for organizers and participants in the bay area to share events information.
+
+
+### `Heroku Link`:
+https://fast-beyond-27734.herokuapp.com/
+
 ### `Project Name`: 
 Bay Area Events
 
@@ -13,6 +19,16 @@ Cheng Zhao (Section 2)
 Yafei Han (Section 1) 
 Xinyi Dai (Section 1) 
 Yanwen Duan (Section 2)
+
+### `Technologies`:
+* React
+* Redux
+* Firestore
+* Semantic UI
+* JavaScript
+* JavaScript XML
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
